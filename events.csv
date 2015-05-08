@@ -1,0 +1,7 @@
+eid,code,short,event_long,owner,owner_email,location,status,+class,+student,ek_eid,
+1,mss4,MSS4,"Metalsmiths Symposium 4",haraldr,mss4classes@drakkar.org,"Shire of Frosted Hills","over",0,0,1089,
+2,mss5,MSS5,"Metalsmiths Symposium 5",haraldr,mss5classes@drakkar.org,"Shire of Frosted Hills","over",0,0,1273,
+3,mss6,MSS6,"Metalsmiths Symposium 6",gilchrist,mss@ekmg.eastkingdom.org,"Shire of Abhainn Ciach Ghlais","over",0,0,"",
+4,example,EXAMPLE,"Example Event",example,mss@ekmg.eastkingdom.org,"Example","testing",1,1,9999
+5,mss12,MSS12,"Metalsmiths Symposium 12",ylaire,YlaireSainteClaire@yahoo.com,"Shire of Sylvan Glen","over",0,0,""
+6,mss13,MSS13,"Metalsmiths Symposium 13",irene,mss@ekmg.eastkingdom.org,"Shire of Anglespur","planning",1,1,"",
