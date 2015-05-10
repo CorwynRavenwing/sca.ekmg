@@ -1,0 +1,4 @@
+
+* Put a link to the archives on the webpage.
+
+* Flesh out /docs/definitions.html and publish it

@@ -1,0 +1,5 @@
+Every reign, take a good closeup picture of the TTTC.
+shrink it to a 100x100 and a 50x50 pixel .jpg file.
+Name them e.g. TTTCx-50 after the reign number and size.
+Then copy it to silverrylle//device/cs/
+Finally, touch this file as a timestamp of the copy.

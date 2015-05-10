@@ -1,0 +1,2560 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>Scheduler</title>
+</head>
+
+<body bgcolor="#FFFF8F">
+
+
+
+<table border=0>
+  <tr>
+    <td>
+      <h1 align="center">EK Metalsmiths' Guild Scheduler</h1>
+    </td>
+    <td>
+      <a href="../index.html">
+	<img width="33" height="50" src="../device/ekmg.gif" alt="EK Metalsmiths' Guild Shield" />
+	<br />
+	(BACK)
+      </a>
+    </td>
+  </tr>
+</table>
+
+<font size=4>
+  This page is to allow people to sign up for teaching classes
+  at a symposium or a schola, and similarly to schedule themselves
+  for taking classes.  Questions, suggestions, or problems using this
+  tool should be directed to the maintainer, Lord Corwyn Ravenwing,
+  who can be reached at
+  <a href="mailto:webminister@ekmg.eastkingdom.org">webminister@ekmg.eastkingdom.org</a>.
+</font>
+
+<br /><br />
+
+
+<h1 align="center">METALSMITHS SYMPOSIUM 6 CLASSES</h1>
+
+
+
+<h2>Sign up to take a class!</h2>
+
+If you see a class (or several classes) that you'd like to take in the list below, please
+
+<!-- not possible yet
+<a href="join_class.html" target="_blank">click here</a>
+-->
+send an email to the chancellors at 
+<a href='mailto:mss5classes (at) drakkar (dot) org'>mss5classes (at) drakkar (dot) org</a>
+
+to register for them.  But make sure to send in your reservation for the event itself
+as soon as possible: unfortunately signing up for a class doesn't automatically reserve
+space for you at the event!
+
+
+
+<h2>Volunteer to teach a class!</h2>
+
+If you are willing to teach any subject relevant to the event theme, please 
+<a href="new_class.html?event=mss6" target="_blank">click here</a> and take a moment to fill out the form to
+register your class.
+
+
+<h2>Class List section</h2>
+
+
+
+<table border="1" width="100%">
+  <tr>
+    <td align="center" width="100"><b>Class Name</b></td>
+    <td align="center"><b>Level</b></td>
+    <td align="center" width="100"><b>Teacher</b></td>
+    <td align="center"><b>Length</b></td>
+    <td align="center"><b>Limit</b></td>
+    <td align="center"><b>Cost</b></td>
+    <td align="center"><b>Location</b></td>
+    <td align="center"><b>Day/Time</b></td>
+  </tr>
+<!-- SQL:
+ SELECT * FROM class WHERE event_id = '3' ORDER BY class_name, description 
+-->
+<!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = ''
+			
+-->
+  <a name="class_59" />
+  <tr>
+    <td align="center"><b>           </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             Solomon   &nbsp;</td>
+    <td rowspan="2" align="center"> Rogelio   &nbsp;</td>
+    <td rowspan="2" align="center"> Roy    &nbsp;</td>
+    <td rowspan="2" align="center"> Broderick           &nbsp;</td>
+    <td rowspan="2" align="center"> --
+           &nbsp;</td>
+    <td rowspan="2" align="center"> --
+           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">Donavan</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">Dereck</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Armour Pattern Drafting'
+			
+-->
+  <a name="class_62" />
+  <tr>
+    <td align="center"><b>          Armour Pattern Drafting </b>&nbsp;</td>
+    <td align="center">                       &nbsp;</td>
+    <td align="center">             Will Langdon of Greymorne   &nbsp;</td>
+    <td rowspan="2" align="center"> 1   &nbsp;</td>
+    <td rowspan="2" align="center"> 10    &nbsp;</td>
+    <td rowspan="2" align="center"> 1.00           &nbsp;</td>
+    <td rowspan="2" align="center"> Main&nbsp;Hall           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;10&nbsp;AM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">Armour Pattern Drafting: We will discuss various styles of armour and I will help the people draw patterns for the pieces that they would like to make. I will also go over some metalworking techniques and tools used to make various pieces.</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">Bring Poster board or other cardboard, scissors, a ruler, pencils and sharpies to draw patterns.</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Bladesmithing'
+			
+-->
+  <a name="class_58" />
+  <tr>
+    <td align="center"><b>          Bladesmithing </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             THL John Michael Thorpe   &nbsp;</td>
+    <td rowspan="2" align="center"> 2+   &nbsp;</td>
+    <td rowspan="2" align="center"> 6    &nbsp;</td>
+    <td rowspan="2" align="center"> 10.00           &nbsp;</td>
+    <td rowspan="2" align="center"> Forge           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;&nbsp;4&nbsp;PM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">Hands-on bladesmithing. Starting with a bar of steel, finishing with a forged blade (time allowing) Forge a blade to shape, grind it (time and facilities allowing) and heat treat it. Directions will be provided so that you can finish the knife at home</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">safety glasses, work gloves, hammers if you have them</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Enameling'
+			
+-->
+  <a name="class_63" />
+  <tr>
+    <td align="center"><b>          Enameling </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             Etain ingen Ruaidri   &nbsp;</td>
+    <td rowspan="2" align="center"> 2   &nbsp;</td>
+    <td rowspan="2" align="center"> 8    &nbsp;</td>
+    <td rowspan="2" align="center"> 2           &nbsp;</td>
+    <td rowspan="2" align="center"> Main&nbsp;Hall           &nbsp;</td>
+    <td rowspan="2" align="center"> Sun&nbsp;12&nbsp;N           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">a very basic class for beginning enameling on copper using a kiln.   We will learn stenciling.</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">nothing</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Extant Translations'
+			
+-->
+  <a name="class_52" />
+  <tr>
+    <td align="center"><b>          Extant Translations </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             Carowyn Silveroak   &nbsp;</td>
+    <td rowspan="2" align="center"> 1-2   &nbsp;</td>
+    <td rowspan="2" align="center"> no limit    &nbsp;</td>
+    <td rowspan="2" align="center"> 0           &nbsp;</td>
+    <td rowspan="2" align="center"> Other           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;&nbsp;9&nbsp;PM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">Extant Translations of Period Lapidaries - They're not as crazy as you think!</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">nothing</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Fossils'
+			
+-->
+  <a name="class_50" />
+  <tr>
+    <td align="center"><b>          Fossils </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             Carowyn Silveroak   &nbsp;</td>
+    <td rowspan="2" align="center"> 1   &nbsp;</td>
+    <td rowspan="2" align="center"> no limit    &nbsp;</td>
+    <td rowspan="2" align="center"> 0           &nbsp;</td>
+    <td rowspan="2" align="center"> Other           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;11&nbsp;AM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">Fossil Hunting - how to find those fossilized critters!</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">sturdy bag, hammer, chisel if they have them</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Glass Beads - Erlandr'
+			
+-->
+  <a name="class_56" />
+  <tr>
+    <td align="center"><b>          Glass Beads - Erlandr </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             Erlandr Nordenskald   &nbsp;</td>
+    <td rowspan="2" align="center"> 5   &nbsp;</td>
+    <td rowspan="2" align="center"> 8/time    &nbsp;</td>
+    <td rowspan="2" align="center"> varies           &nbsp;</td>
+    <td rowspan="2" align="center"> Glass&nbsp;Bead&nbsp;Area           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;11&nbsp;AM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">An open studio for people to work on flameworking technique under supervision</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">goggles, small container for beads, needlenose plyers</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Gold Panning'
+			
+-->
+  <a name="class_51" />
+  <tr>
+    <td align="center"><b>          Gold Panning </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             Carowyn Silveroak   &nbsp;</td>
+    <td rowspan="2" align="center"> 1   &nbsp;</td>
+    <td rowspan="2" align="center"> no limit    &nbsp;</td>
+    <td rowspan="2" align="center"> 0           &nbsp;</td>
+    <td rowspan="2" align="center"> Other           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;10&nbsp;AM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">Intro to Gold Panning</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">nothing</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Intro to Glass Beads - Aine'
+			
+-->
+  <a name="class_64" />
+  <tr>
+    <td align="center"><b>          Intro to Glass Beads - Aine </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             Lady Aine ingen ui Aengusa   &nbsp;</td>
+    <td rowspan="2" align="center"> 2   &nbsp;</td>
+    <td rowspan="2" align="center"> none    &nbsp;</td>
+    <td rowspan="2" align="center"> 2.00           &nbsp;</td>
+    <td rowspan="2" align="center"> Glass&nbsp;Bead&nbsp;Area           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;&nbsp;4&nbsp;PM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">I will tell a brief history of glass as well as demonstrate making beads and help people hands-on to make their own</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">safety glasses if they have their own, otherwise some will be provided</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Jewelry Soldering'
+			
+-->
+  <a name="class_60" />
+  <tr>
+    <td align="center"><b>          Jewelry Soldering </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             THL John Michael Thorpe   &nbsp;</td>
+    <td rowspan="2" align="center"> 1   &nbsp;</td>
+    <td rowspan="2" align="center">     &nbsp;</td>
+    <td rowspan="2" align="center"> no           &nbsp;</td>
+    <td rowspan="2" align="center"> Pavillion&nbsp;1           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;&nbsp;5&nbsp;PM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">Introduction to Jewelry soldering on gold, silver and brass/copper</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">open mind</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Knife Forging'
+			
+-->
+  <a name="class_57" />
+  <tr>
+    <td align="center"><b>          Knife Forging </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             THL John Michael Thorpe   &nbsp;</td>
+    <td rowspan="2" align="center"> 1-2   &nbsp;</td>
+    <td rowspan="2" align="center">     &nbsp;</td>
+    <td rowspan="2" align="center">            &nbsp;</td>
+    <td rowspan="2" align="center"> Forge           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;&nbsp;3&nbsp;PM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">basic knife forging and construction</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">safety glasses</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Medieval Locks'
+			
+-->
+  <a name="class_61" />
+  <tr>
+    <td align="center"><b>          Medieval Locks </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             Will Langdon of Greymorne   &nbsp;</td>
+    <td rowspan="2" align="center"> 1   &nbsp;</td>
+    <td rowspan="2" align="center"> 15    &nbsp;</td>
+    <td rowspan="2" align="center"> 0.50           &nbsp;</td>
+    <td rowspan="2" align="center"> Pavillion&nbsp;1           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;10&nbsp;AM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">Making a medieval Lock:  I will go over the parts of a lock and its workings. We will discuss the tools and skills required to make locks and I will show its assemble.</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">none</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Pearl Knotting'
+			
+-->
+  <a name="class_54" />
+  <tr>
+    <td align="center"><b>          Pearl Knotting </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             The Hair Stick Landy   &nbsp;</td>
+    <td rowspan="2" align="center"> 2   &nbsp;</td>
+    <td rowspan="2" align="center"> 10    &nbsp;</td>
+    <td rowspan="2" align="center"> 5           &nbsp;</td>
+    <td rowspan="2" align="center"> Main&nbsp;Hall           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;&nbsp;3&nbsp;PM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">Basic pearl knotting.</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">Their hands</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Pewter Buttons'
+			
+-->
+  <a name="class_65" />
+  <tr>
+    <td align="center"><b>          Pewter Buttons </b>&nbsp;</td>
+    <td align="center">             intermediate          &nbsp;</td>
+    <td align="center">             Master Thorsten   &nbsp;</td>
+    <td rowspan="2" align="center"> 2   &nbsp;</td>
+    <td rowspan="2" align="center"> 8    &nbsp;</td>
+    <td rowspan="2" align="center"> 3           &nbsp;</td>
+    <td rowspan="2" align="center"> Pavillion&nbsp;1           &nbsp;</td>
+    <td rowspan="2" align="center"> Sun&nbsp;10&nbsp;AM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">14th century pewter buttons.  The latest close-fitting fashions require fasteners beyond the simple brooch.  Learn how to make "boutons" the latest fashion accessory from the Germanic lands!</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">Will provide nessessary equip</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Sand Casting'
+			
+-->
+  <a name="class_55" />
+  <tr>
+    <td align="center"><b>          Sand Casting </b>&nbsp;</td>
+    <td align="center">             beginner          &nbsp;</td>
+    <td align="center">             Hengist Gromhydig the Saexon   &nbsp;</td>
+    <td rowspan="2" align="center"> 2   &nbsp;</td>
+    <td rowspan="2" align="center"> 20    &nbsp;</td>
+    <td rowspan="2" align="center"> 15           &nbsp;</td>
+    <td rowspan="2" align="center"> Pavillion&nbsp;1           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;&nbsp;3&nbsp;PM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">Beginners Sand Casting</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">None</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    <!-- SQL2:
+SELECT * FROM schedule
+				LEFT JOIN days ON (schedule.day=days.day_num)
+				LEFT JOIN timeslots ON (schedule.day=timeslots.day_num
+					AND schedule.start_time=timeslots.start_time)
+			WHERE schedule.event_id = '3'
+				AND days.event_id = '3'
+				AND timeslots.event_id = '3'
+				AND class_short_name = 'Sharpening'
+			
+-->
+  <a name="class_53" />
+  <tr>
+    <td align="center"><b>          Sharpening </b>&nbsp;</td>
+    <td align="center">                       &nbsp;</td>
+    <td align="center">             Master Bedwyr Danwyn, OL, OP   &nbsp;</td>
+    <td rowspan="2" align="center"> 1   &nbsp;</td>
+    <td rowspan="2" align="center"> no limit    &nbsp;</td>
+    <td rowspan="2" align="center"> none           &nbsp;</td>
+    <td rowspan="2" align="center"> Pavillion&nbsp;1           &nbsp;</td>
+    <td rowspan="2" align="center"> Sat&nbsp;11&nbsp;AM           &nbsp;</td>
+  </tr>
+  <tr>
+    <td colspan="3" align="left">
+		<table>
+		  <tr>
+		  	<td align="right" valign="top" width="175"><b>Description:</b></td>
+			<td align="left" valign="top">"Sharpen your wits; sharpen your knives" This class explains the science and demonstrates the methods to sharpen knives, razors, scissors, swords, etc.</td>
+		  </tr>
+			  <tr>
+			<td align="right" valign="top" width="175"><b>Bring with you to class:</b></td>
+			<td align="left" valign="top">None</td>
+		  </tr>
+			</table>
+    </td>
+  </tr>
+    </table>
+
+
+<h2>Class Schedule section</h2>
+
+<!--
+Some classes have been planned but don't yet appear on the schedule.  We'll be adding them as the schedule shakes itself out.
+
+<br />
+-->
+
+<!-- SQL:
+SELECT * FROM locations WHERE event_id = '3' 
+-->
+
+<h3>Please note: more classes will be added Friday night as people arrive and volunteer to teach something.</h3>
+
+<TABLE BORDER="0" WIDTH="100%">
+  <TR>
+    <TD>
+	
+<!-- SQL:
+SELECT * FROM days WHERE event_id = '3' 
+-->
+<!-- SQL:
+SELECT * FROM timeslots
+			WHERE event_id = '3'
+			AND day_num = 1 
+-->
+<table border="1" align="center">
+  <tr>
+  	<td colspan="10" height="40" align="center">
+		<h2>
+			  <a href="?event=mss6&day=1" target="_blank">
+				FRIDAY OCT 19th			  </a>
+			</h2>
+	</td>
+  </tr>
+  <tr>
+    <td width="75" align="center">&nbsp;  </td>
+        <td width="75" align="center"><b> 2 PM</b></td>
+            <td width="75" align="center"><b> 3 PM</b></td>
+            <td width="75" align="center"><b> 4 PM</b></td>
+            <td width="75" align="center"><b> 5 PM</b></td>
+            <td width="75" align="center"><b> 6 PM</b></td>
+            <td width="75" align="center"><b> 7 PM</b></td>
+            <td width="75" align="center"><b> 8 PM</b></td>
+            <td width="75" align="center"><b> 9 PM</b></td>
+            <td width="75" align="center"><b>10 PM</b></td>
+          </tr>
+      <tr>
+    <td align="center"><b>Pavillion 1</b></td>
+            <!-- Fri  2 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 14 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  3 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 15 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  4 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 16 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  5 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 17 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  6 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 18 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  7 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 19 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  8 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 20 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  9 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 21 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri 10 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 22 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>Glass Bead Area</b></td>
+            <!-- Fri  2 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 14 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  3 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 15 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  4 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 16 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  5 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 17 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  6 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 18 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  7 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 19 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  8 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 20 
+                           AND location = 'Glass Bead Area' 
+-->
+    <td colspan='3' align="center">Open Torch</td>
+                    <!-- skipping 3 column -->
+  </tr>
+          <tr>
+    <td align="center"><b>Main Hall</b></td>
+            <!-- Fri  2 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 14 
+                           AND location = 'Main Hall' 
+-->
+    <td colspan='3' align="center">(setup)</td>
+                    <!-- skipping 3 column -->
+    <!-- Fri  5 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 17 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  6 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 18 
+                           AND location = 'Main Hall' 
+-->
+    <td colspan='1' align="center">Dinner</td>
+                        <!-- Fri  7 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 19 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  8 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 20 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  9 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 21 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri 10 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 22 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>Forge</b></td>
+            <!-- Fri  2 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 14 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  3 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 15 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  4 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 16 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  5 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 17 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  6 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 18 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  7 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 19 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  8 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 20 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  9 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 21 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri 10 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 22 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>Other</b></td>
+            <!-- Fri  2 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 14 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  3 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 15 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  4 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 16 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  5 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 17 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  6 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 18 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  7 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 19 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  8 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 20 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  9 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 21 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri 10 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 22 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>&nbsp;</b></td>
+            <!-- Fri  2 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 14 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  3 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 15 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  4 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 16 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  5 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 17 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  6 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 18 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  7 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 19 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  8 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 20 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  9 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 21 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri 10 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 22 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>&nbsp;</b></td>
+            <!-- Fri  2 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 14 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  3 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 15 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  4 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 16 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  5 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 17 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  6 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 18 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  7 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 19 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  8 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 20 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri  9 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 21 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Fri 10 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 1 
+                           AND start_time = 22 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+  </tr>
+        </table>
+
+    </TD>
+  </TR>
+
+    <!-- SQL:
+SELECT * FROM timeslots
+			WHERE event_id = '3'
+			AND day_num = 2 
+-->
+<table border="1" align="center">
+  <tr>
+  	<td colspan="17" height="40" align="center">
+		<h2>
+			  <a href="?event=mss6&day=2" target="_blank">
+				SATURDAY OCT 20th			  </a>
+			</h2>
+	</td>
+  </tr>
+  <tr>
+    <td width="75" align="center">&nbsp;  </td>
+        <td width="75" align="center"><b> 8 AM</b></td>
+            <td width="75" align="center"><b> 9 AM</b></td>
+            <td width="75" align="center"><b>10 AM</b></td>
+            <td width="75" align="center"><b>11 AM</b></td>
+            <td width="75" align="center"><b>12 N</b></td>
+            <td width="75" align="center"><b> 1 PM</b></td>
+            <td width="75" align="center"><b> 2 PM</b></td>
+            <td width="75" align="center"><b> 3 PM</b></td>
+            <td width="75" align="center"><b> 4 PM</b></td>
+            <td width="75" align="center"><b> 5 PM</b></td>
+            <td width="75" align="center"><b> 6 PM</b></td>
+            <td width="75" align="center"><b>After Feast</b></td>
+            <td width="75" align="center"><b> 9 PM</b></td>
+            <td width="75" align="center"><b>10 PM</b></td>
+            <td width="75" align="center"><b>11 PM</b></td>
+            <td width="75" align="center"><b>12 M</b></td>
+          </tr>
+      <tr>
+    <td align="center"><b>Pavillion 1</b></td>
+            <!-- Sat  8 AM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 8 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  9 AM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 9 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 AM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 10 
+                           AND location = 'Pavillion 1' 
+-->
+    <td colspan='1' align="center">Medieval Locks</td>
+                        <!-- Sat 11 AM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 11 
+                           AND location = 'Pavillion 1' 
+-->
+    <td colspan='1' align="center">Sharpening</td>
+                        <!-- Sat 12 N / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 12 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  1 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 13 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  2 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 14 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  3 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 15 
+                           AND location = 'Pavillion 1' 
+-->
+    <td colspan='2' align="center">Sand Casting</td>
+                    <!-- skipping 2 column -->
+    <!-- Sat  5 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 17 
+                           AND location = 'Pavillion 1' 
+-->
+    <td colspan='1' align="center">Jewelry Soldering</td>
+                        <!-- Sat  6 PM / Pavillion 1 -->
+                <td rowspan='7' align="center"><b>F<br />E<br />A<br />S<br />T</b></td>
+                        <!-- Sat After Feast / Pavillion 1 -->
+                <td rowspan='7' align="center">Schmooze, Library, Tuit area, etc. ...</td>
+                        <!-- Sat  9 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 21 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 22 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 11 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 23 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 12 M / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 24 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>Glass Bead Area</b></td>
+            <!-- Sat  8 AM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 8 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  9 AM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 9 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 AM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 10 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 11 AM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 11 
+                           AND location = 'Glass Bead Area' 
+-->
+    <td colspan='5' align="center">Glass Beads - Erlandr</td>
+                    <!-- skipping 5 column -->
+    <!-- Sat  4 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 16 
+                           AND location = 'Glass Bead Area' 
+-->
+    <td colspan='2' align="center">Intro to Glass Beads - Aine</td>
+                    <!-- skipping 2 column -->
+    <!-- Sat  6 PM / Glass Bead Area -->
+            <!-- all-location event: skip td -->    <!-- Sat After Feast / Glass Bead Area -->
+            <!-- all-location event: skip td -->    <!-- Sat  9 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 21 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 22 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 11 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 23 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 12 M / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 24 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>Main Hall</b></td>
+            <!-- Sat  8 AM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 8 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  9 AM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 9 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 AM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 10 
+                           AND location = 'Main Hall' 
+-->
+    <td colspan='1' align="center">Armour Pattern Drafting</td>
+                        <!-- Sat 11 AM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 11 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 12 N / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 12 
+                           AND location = 'Main Hall' 
+-->
+    <td colspan='1' align="center">Lunch<br/>(12:00 - 12:30)</td>
+                        <!-- Sat  1 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 13 
+                           AND location = 'Main Hall' 
+-->
+    <td colspan='2' align="center">Guest Lecturer<br/>(12:30 - 3:00)</td>
+                    <!-- skipping 2 column -->
+    <!-- Sat  3 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 15 
+                           AND location = 'Main Hall' 
+-->
+    <td colspan='2' align="center">Pearl Knotting</td>
+                    <!-- skipping 2 column -->
+    <!-- Sat  5 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 17 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  6 PM / Main Hall -->
+            <!-- all-location event: skip td -->    <!-- Sat After Feast / Main Hall -->
+            <!-- all-location event: skip td -->    <!-- Sat  9 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 21 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 22 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 11 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 23 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 12 M / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 24 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>Forge</b></td>
+            <!-- Sat  8 AM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 8 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  9 AM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 9 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 AM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 10 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 11 AM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 11 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 12 N / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 12 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  1 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 13 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  2 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 14 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  3 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 15 
+                           AND location = 'Forge' 
+-->
+    <td colspan='1' align="center">Knife Forging</td>
+                        <!-- Sat  4 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 16 
+                           AND location = 'Forge' 
+-->
+    <td colspan='2' align="center">Bladesmithing</td>
+                    <!-- skipping 2 column -->
+    <!-- Sat  6 PM / Forge -->
+            <!-- all-location event: skip td -->    <!-- Sat After Feast / Forge -->
+            <!-- all-location event: skip td -->    <!-- Sat  9 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 21 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 22 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 11 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 23 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 12 M / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 24 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>Other</b></td>
+            <!-- Sat  8 AM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 8 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  9 AM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 9 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 AM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 10 
+                           AND location = 'Other' 
+-->
+    <td colspan='1' align="center">Gold Panning</td>
+                        <!-- Sat 11 AM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 11 
+                           AND location = 'Other' 
+-->
+    <td colspan='1' align="center">Fossils</td>
+                        <!-- Sat 12 N / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 12 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  1 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 13 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  2 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 14 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  3 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 15 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  4 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 16 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  5 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 17 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  6 PM / Other -->
+            <!-- all-location event: skip td -->    <!-- Sat After Feast / Other -->
+            <!-- all-location event: skip td -->    <!-- Sat  9 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 21 
+                           AND location = 'Other' 
+-->
+    <td colspan='2' align="center">Extant Translations</td>
+                    <!-- skipping 2 column -->
+    <!-- Sat 11 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 23 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 12 M / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 24 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>&nbsp;</b></td>
+            <!-- Sat  8 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 8 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  9 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 9 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 10 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 11 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 11 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 12 N / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 12 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  1 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 13 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  2 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 14 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  3 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 15 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  4 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 16 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  5 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 17 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  6 PM / &nbsp; -->
+            <!-- all-location event: skip td -->    <!-- Sat After Feast / &nbsp; -->
+            <!-- all-location event: skip td -->    <!-- Sat  9 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 21 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 22 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 11 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 23 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 12 M / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 24 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>&nbsp;</b></td>
+            <!-- Sat  8 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 8 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  9 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 9 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 10 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 11 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 11 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 12 N / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 12 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  1 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 13 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  2 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 14 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  3 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 15 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  4 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 16 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  5 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 17 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat  6 PM / &nbsp; -->
+            <!-- all-location event: skip td -->    <!-- Sat After Feast / &nbsp; -->
+            <!-- all-location event: skip td -->    <!-- Sat  9 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 21 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 10 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 22 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 11 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 23 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sat 12 M / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 2 
+                           AND start_time = 24 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+  </tr>
+        </table>
+
+    </TD>
+  </TR>
+
+    <!-- SQL:
+SELECT * FROM timeslots
+			WHERE event_id = '3'
+			AND day_num = 3 
+-->
+<table border="1" align="center">
+  <tr>
+  	<td colspan="7" height="40" align="center">
+		<h2>
+			  <a href="?event=mss6&day=3" target="_blank">
+				SUNDAY OCT 21th			  </a>
+			</h2>
+	</td>
+  </tr>
+  <tr>
+    <td width="75" align="center">&nbsp;  </td>
+        <td width="75" align="center"><b> 9 AM</b></td>
+            <td width="75" align="center"><b>10 AM</b></td>
+            <td width="75" align="center"><b>11 AM</b></td>
+            <td width="75" align="center"><b>12 N</b></td>
+            <td width="75" align="center"><b> 1 PM</b></td>
+            <td width="75" align="center"><b> 2 PM</b></td>
+          </tr>
+      <tr>
+    <td align="center"><b>Pavillion 1</b></td>
+            <!-- Sun  9 AM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 9 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 10 AM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 10 
+                           AND location = 'Pavillion 1' 
+-->
+    <td colspan='2' align="center">Pewter Buttons</td>
+                    <!-- skipping 2 column -->
+    <!-- Sun 12 N / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 12 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  1 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 13 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  2 PM / Pavillion 1 -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 14 
+                           AND location = 'Pavillion 1' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>Glass Bead Area</b></td>
+            <!-- Sun  9 AM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 9 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 10 AM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 10 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 11 AM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 11 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 12 N / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 12 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  1 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 13 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  2 PM / Glass Bead Area -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 14 
+                           AND location = 'Glass Bead Area' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>Main Hall</b></td>
+            <!-- Sun  9 AM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 9 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 10 AM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 10 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 11 AM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 11 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 12 N / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 12 
+                           AND location = 'Main Hall' 
+-->
+    <td colspan='2' align="center">Enameling</td>
+                    <!-- skipping 2 column -->
+    <!-- Sun  2 PM / Main Hall -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 14 
+                           AND location = 'Main Hall' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>Forge</b></td>
+            <!-- Sun  9 AM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 9 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 10 AM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 10 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 11 AM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 11 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 12 N / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 12 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  1 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 13 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  2 PM / Forge -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 14 
+                           AND location = 'Forge' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>Other</b></td>
+            <!-- Sun  9 AM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 9 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 10 AM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 10 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 11 AM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 11 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 12 N / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 12 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  1 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 13 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  2 PM / Other -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 14 
+                           AND location = 'Other' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>&nbsp;</b></td>
+            <!-- Sun  9 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 9 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 10 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 10 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 11 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 11 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 12 N / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 12 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  1 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 13 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  2 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 14 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+  </tr>
+          <tr>
+    <td align="center"><b>&nbsp;</b></td>
+            <!-- Sun  9 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 9 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 10 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 10 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 11 AM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 11 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun 12 N / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 12 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  1 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 13 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+    <!-- Sun  2 PM / &nbsp; -->
+            <!-- SQL:
+SELECT * FROM schedule
+						WHERE event_id = '3'  
+                           AND day = 3 
+                           AND start_time = 14 
+                           AND location = '&nbsp;' 
+-->
+<td>&nbsp;</td>
+  </tr>
+        </table>
+
+    </TD>
+  </TR>
+
+    
+</TABLE>
+
+	
+</body>
+</html>

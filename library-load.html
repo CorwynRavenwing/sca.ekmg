@@ -1,0 +1,134 @@
+<html>
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<title>EKMG Library - LOAD</title>
+</head>
+
+<body bgcolor="#FFFF8F">
+<? include "connect.php"; ?>
+
+<?
+echo "<h1>Program start at " . date("Y-m-d h:i:s A") . "</h1>\n";
+
+// ----------------------------------------------------------------------
+
+echo "<h1>creating table library</h1>\n";
+
+do_query("CREATE TABLE IF NOT EXISTS library ( x char(1) )");
+do_query("DROP TABLE IF EXISTS library_new");
+
+do_query("CREATE TABLE library_new (
+	library_id				int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	code					varchar(100) NOT NULL,
+	librarian_link			varchar(100) NOT NULL,
+	librarian_name			varchar(100) NOT NULL,
+	librarian_short			varchar(100) NOT NULL,
+	library_title			varchar(100) NOT NULL,
+	librarian_email			varchar(100) NOT NULL,
+	borrowable				tinyint(1) NOT NULL)
+");
+
+echo "<h3>loading data</h3>\n";
+do_query("LOAD DATA
+	LOCAL INFILE 'libraries.csv'
+	INTO TABLE library_new
+	FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '\"'
+	LINES TERMINATED BY '\\n'
+	IGNORE 1 LINES
+	(code,librarian_link,librarian_name,librarian_short,library_title,librarian_email,borrowable)
+");
+
+# echo "<h3>fixing columns</h3>\n";
+
+# do_query("UPDATE ... ");
+
+# do_query("ALTER TABLE ...");
+
+echo "<h3>creating indexes</h3>\n";
+do_query("ALTER TABLE library_new
+    ADD INDEX(code),
+	ADD INDEX(librarian_link),
+	ADD INDEX(librarian_name),
+	ADD INDEX(librarian_short),
+	ADD INDEX(library_title),
+	ADD INDEX(librarian_email),
+	ADD INDEX(borrowable)
+");
+
+do_query("DROP TABLE IF EXISTS library_old");
+do_query("RENAME TABLE library TO library_old, library_new TO library");
+
+do_query("SELECT count(*) AS 'library' FROM library");		// should show the result
+
+// ----------------------------------------------------------------------
+
+echo "<h1>creating table book</h1>\n";
+
+do_query("CREATE TABLE IF NOT EXISTS book ( x char(1) )");
+do_query("DROP TABLE IF EXISTS book_new");
+
+do_query("CREATE TABLE book_new (
+	book_id			int(11) NOT NULL AUTO_INCREMENT PRIMARY KEY,
+	code			varchar(255) NOT NULL,
+	approved		int(1) NOT NULL DEFAULT 0,
+	flag			int(1) NOT NULL DEFAULT 0,
+	category		varchar(255) NOT NULL,
+	subcat			varchar(255) NOT NULL,
+	sort_field		varchar(255) NOT NULL,
+	title			varchar(255) NOT NULL,
+	author			varchar(255) NOT NULL,
+	year			varchar(255) NOT NULL,
+	isbn			varchar(255) NOT NULL,
+	other_info		varchar(255) NOT NULL,
+	comments		varchar(255) NOT NULL
+	)
+");
+
+echo "<h3>loading data</h3>\n";
+do_query("LOAD DATA
+	LOCAL INFILE 'books.csv'
+	INTO TABLE book_new
+	FIELDS TERMINATED BY ',' OPTIONALLY ENCLOSED BY '\"'
+	LINES TERMINATED BY '\\n'
+	IGNORE 1 LINES
+	(code,approved,flag,category,subcat,title,author,year,isbn,other_info,comments)
+");
+
+# echo "<h3>fixing columns</h3>\n";
+
+/*
+do_query("UPDATE book_new
+	SET sort_field = Replace(title, '^The ', '')
+	WHERE sort_field = ''
+");
+*/
+
+# do_query("ALTER TABLE ...");
+
+echo "<h3>creating indexes</h3>\n";
+do_query("ALTER TABLE book_new
+    ADD INDEX(code),
+	ADD INDEX(approved),
+	ADD INDEX(flag),
+	ADD INDEX(category),
+	ADD INDEX(subcat),
+	ADD INDEX(title),
+	ADD INDEX(author),
+	ADD INDEX(year),
+	ADD INDEX(isbn),
+	ADD INDEX(other_info),
+	ADD INDEX(comments)
+");
+
+do_query("DROP TABLE IF EXISTS book_old");
+do_query("RENAME TABLE book TO book_old, book_new TO book");
+
+do_query("SELECT count(*) AS 'book' FROM book");		// should show the result
+
+// ----------------------------------------------------------------------
+
+echo "<h1>Program stop at " . date("Y-m-d h:i:s A") . "</h1>\n";
+?>
+
+</body>
+</html>

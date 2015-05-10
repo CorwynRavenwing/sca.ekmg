@@ -1,0 +1,1 @@
+Verify the size of the Mastermyr hammers -- they may be twice as large as I had thought -- and update the doco to match reality.  Then upload the changed version.

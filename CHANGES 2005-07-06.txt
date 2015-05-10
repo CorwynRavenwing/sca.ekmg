@@ -1,0 +1,2 @@
+* better buttons for the menu in the center of the page
+

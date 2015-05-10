@@ -1,0 +1,112 @@
+/* gallery.css */
+
+ul.breadcrumbs {
+	clear:both;
+	display:inline;
+	margin:10px 10px 10px 0px;
+}
+
+ul.breadcrumbs li {
+	display:inline;
+	float:left;
+	margin:10px 10px 10px 0px;
+	font-size:0.75em;
+}
+
+ul.breadcrumbs + * {
+	clear:both;
+}
+
+div.message {
+	font-size:1.25em;
+	font-weight:bold;
+	color:green;
+}
+
+div.error {
+	font-size:1.25em;
+	font-weight:bold;
+	color:red;
+}
+
+div.block {
+	float:left;
+	height:200px;
+	width:150px;
+	margin:15px;
+	padding:30px;
+	border:1px black solid;
+	text-align:center;
+}
+
+div.hilite {
+	background-color:#FFDDDD;	/* light red */
+}
+
+div.image {
+	background-color:#FFFF99;	/* light yellow */
+}
+
+div.dir {
+	background-color:#DDDDFF;	/* light blue */
+}
+
+div.auto_new {
+	border: 1px solid #00FF00;	/* green */
+}
+
+div.auto_error {
+	border: 1px solid #FF0000;	/* red */
+}
+
+div.auto_enough {
+	border: 1px solid #FFFF00;	/* yellow */
+}
+
+div.auto_no {
+	border: 1px solid #0000FF;	/* blue */
+}
+
+div.block div.imageblock {
+	height:150px;
+	width:150px;
+	background-color:#99FF99;	/* light green */
+	padding:5px;
+}
+
+div.block img {
+	margin:0px;
+	padding:0px;
+	border:1px black solid;
+	vertical-align:middle;
+}
+
+div.block p {
+	/* width:150px; */
+	font-size:0.75em;
+	border:1px black solid;
+	margin:0px;
+	padding-right: auto;
+	padding-left: auto;
+}
+
+div.block p.caption {
+	font-size:0.5em;
+	border:none;
+	/*
+	margin:-20px;
+	margin-top:-10px;
+	*/
+}
+
+div.disclaimer {
+	clear:left;
+	font-size:0.70em;
+}
+
+div.admin {
+	clear:left;
+	margin-top:1em;
+	font-size:0.70em;
+	color:blue;
+}

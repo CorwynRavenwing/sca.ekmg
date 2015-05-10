@@ -1,0 +1,6 @@
+
+* Add link to SCAPerm.htm form
+
+* Translate Caro's Chatelaine doco
+* file as: "research/carowyn/chatelaine.doc"
+* need:    "research/corwyn/plummet.html"

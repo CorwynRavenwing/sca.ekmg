@@ -1,0 +1,3 @@
+Don't change scapermit.html or scarelease.html in this directory!
+
+Instead, change them in 'silverrylle' and copy them here.

@@ -1,0 +1,16 @@
+
+* change "upcoming events" page to reflect what month it is
+
+* Remove "MSS5 upcoming" data, replace with "MSS6 upcoming" data where appropriate
+
+* Class list by *location*
+
+* Class list by *student*
+
+* Class list by *teacher* (or combine with student?)
+
+* Editing your own class
+
+* Scheduling tool -- moving the date and time of classes (some have multiple scheduled times)
+
+* flags in the Event, turning on the Forge and Library questions
