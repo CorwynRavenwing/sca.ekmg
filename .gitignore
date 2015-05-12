@@ -1,0 +1,3 @@
+# ignore EKMG subscriber lists
+EKMG*.txt
+ekmg*.txt
